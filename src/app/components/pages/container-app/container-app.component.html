@@ -1,4 +1,34 @@
 
-<h1>control</h1>
+<!-- <h1>control</h1> -->
+<!-- <router-outlet></router-outlet> -->
+<div class="wrapper">
+    <div class="navbar-head">
+        <div class="navbar-container">
+            <div class="nav-der">
+                <div class="navbar-users">
+                    <!-- <div class="dropdown"> -->
+                        <!-- <button class="dropbtn">Dropdown</button> -->
+                        <!-- <a href="" class="dropbtn">
+                            <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                            <?php echo $_SESSION['nom_usuario']; ?>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="php/logout.php">Cerrar la sesión</a>
+                        </div>
+                    </div> -->
 
-<router-outlet></router-outlet>
+                    <a href=""><i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                        <?php echo strtolower($_SESSION['nom_usuario']); ?></a>
+                    <a href="php/logout.php">Cerrar sesión</a>
+                    <!-- <a href=""><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <article class="content">
+        <router-outlet></router-outlet>
+    </article>
+    <footer class="main-footer">
+        <p> Coomeva - Gestion Documental 2023  </p>	
+    </footer>
+</div>
