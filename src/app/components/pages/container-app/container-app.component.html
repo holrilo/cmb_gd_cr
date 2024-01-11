@@ -1,34 +1,43 @@
+<!-- <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav"
+        fixedInViewport="Fixed" 
+        fixedTopGap="0"
+        fixedBottomGap="0"
+    >
+    Sidenav
+    </mat-sidenav>
+    <mat-toolbar class="example-header">Header</mat-toolbar>
+    <router-outlet></router-outlet>
+    <mat-toolbar class="example-footer">Footer</mat-toolbar>
+</mat-sidenav-container> -->
 
-<!-- <h1>control</h1> -->
-<!-- <router-outlet></router-outlet> -->
-<div class="wrapper">
-    <div class="navbar-head">
-        <div class="navbar-container">
-            <div class="nav-der">
-                <div class="navbar-users">
-                    <!-- <div class="dropdown"> -->
-                        <!-- <button class="dropbtn">Dropdown</button> -->
-                        <!-- <a href="" class="dropbtn">
-                            <i class="fa fa-user fa-lg" aria-hidden="true"></i>
-                            <?php echo $_SESSION['nom_usuario']; ?>
-                        </a>
-                        <div class="dropdown-content">
-                            <a href="php/logout.php">Cerrar la sesión</a>
-                        </div>
-                    </div> -->
+<mat-sidenav-container autosize>
+    
 
-                    <a href=""><i class="fa fa-user fa-lg" aria-hidden="true"></i>
-                        <?php echo strtolower($_SESSION['nom_usuario']); ?></a>
-                    <a href="php/logout.php">Cerrar sesión</a>
-                    <!-- <a href=""><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a> -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <article class="content">
+    <!-- <mat-sidenav [opened]="true" mode="side"> -->
+    <!-- <mat-sidenav [mode]="isMobile ? 'over' : 'side'" [opened]="isMobile ? 'false' : 'true'"> -->
+    <mat-sidenav [ngClass]="!isCollapsed ? 'expanded' : ''"  [mode]="isMobile ? 'over' : 'side'" [opened]="isMobile ? 'false' : 'true'">
+        <mat-nav-list>
+            <a mat-list-item>
+                <span class="entry">
+                    <mat-icon>house</mat-icon>
+                    <span *ngIf="!isCollapsed">Dashboard</span>
+                </span>
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <!-- <button mat-icon-button aria-label="Menu Icon" > -->
+            <button mat-icon-button aria-label="Menu Icon" (click)="toggleMenu()">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <h1>Responsive</h1>
+        </mat-toolbar>
+        <h2>content</h2>
         <router-outlet></router-outlet>
-    </article>
-    <footer class="main-footer">
-        <p> Coomeva - Gestion Documental 2023  </p>	
-    </footer>
-</div>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
+
