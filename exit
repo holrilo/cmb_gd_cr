@@ -1,0 +1,35 @@
+[33mcommit 889e0beecd1b370a8ab9e4c8ebfd239881f3eade[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: holrilo <senky98@gmail.com>
+Date:   Thu Jan 11 15:55:14 2024 -0500
+
+    Se crea sidebar con material
+
+[33mcommit 248b0f045f5b162018fb9c939ad330cacd63ae90[m
+Author: holrilo <senky98@gmail.com>
+Date:   Fri Jan 5 11:09:05 2024 -0500
+
+    Se adiciona angular material
+
+[33mcommit d41e510ce13adf0a612239ed583c43cfb0fcfc35[m
+Author: holrilo <senky98@gmail.com>
+Date:   Thu Jan 4 22:23:12 2024 -0500
+
+    se crear componentes container, home , route 2024-01-4
+
+[33mcommit 17b729c1aeb3d55bd95bfbcee45a9006c773de70[m
+Author: holrilo <senky98@gmail.com>
+Date:   Thu Jan 4 16:44:45 2024 -0500
+
+    se adiciona componente config
+
+[33mcommit 723ca05a56cec79e082fe7a239eb2ac7e3e06134[m
+Author: holrilo <senky98@gmail.com>
+Date:   Thu Jan 4 16:23:37 2024 -0500
+
+    2024-01-04
+
+[33mcommit aef39a7c178eb03e25fa67e53c79a3486d12c68e[m
+Author: holrilo <senky98@gmail.com>
+Date:   Tue Dec 19 16:07:57 2023 -0500
+
+    inicial
