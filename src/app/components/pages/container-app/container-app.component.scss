@@ -37,7 +37,13 @@ h2 {padding: 1rem;}
 mat-toolbar{
     position:fixed;
     top:0px;
-    z-index: 2;
+    // z-index: 1;
+    height: 40px;
+    width: 80%;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    background-color: #008c4a;
 }
 mat-sidenav-container{
     height: 100%;
@@ -74,4 +80,21 @@ mat-sidenav-content{
 
 mat-expansion-panel{
     box-shadow: none !important;
+}
+
+mat-divider{
+    // display: ;
+    // position: fixed;
+    // padding-top: 5rem;
+    margin: 3rem 1rem 1rem 1rem;
+}
+
+img{
+    position: absolute;
+    // display: initial;
+    
+    width: 170px;
+    // margin: 10px;
+    margin: -70px 10px 10px;
+    border-radius: 20px;
 }
