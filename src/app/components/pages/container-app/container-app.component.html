@@ -18,54 +18,97 @@
     <!-- <mat-sidenav [mode]="isMobile ? 'over' : 'side'" [opened]="isMobile ? 'false' : 'true'"> -->
     <mat-sidenav [ngClass]="!isCollapsed ? 'expanded' : ''"  [mode]="isMobile ? 'over' : 'side'" [opened]="isMobile ? 'false' : 'true'">
         <mat-nav-list>
-            <a mat-list-item>
+            <!-- <a mat-list-item>
                 <span class="entry">
                     <mat-icon>house</mat-icon>
                     <span *ngIf="!isCollapsed">Inicio</span>
                 </span>
-            </a>
-            <a mat-list-item>
+            </a> -->
+            <!-- <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>basic</mat-panel-title>
+                    <mat-panel-description>descripcion</mat-panel-description>
+                </mat-expansion-panel-header>
+                expancion
+            </mat-expansion-panel> -->
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <span class="entry">
+                            <mat-icon>house</mat-icon>
+                            <span *ngIf="!isCollapsed"> Registrar </span>
+                        </span>
+                    </mat-panel-title>
+                    <!-- <mat-panel-description></mat-panel-description> -->
+                </mat-expansion-panel-header>
+
+                <a mat-list-item>
+                    <span class="entry">
+                        <mat-icon>subject</mat-icon>
+                        <span *ngIf="!isCollapsed"> Recepcion </span>
+                    </span>
+                </a>
+                <a mat-list-item>
+                    <span class="entry">
+                        <mat-icon>settings_backup_restore</mat-icon>
+                        <span *ngIf="!isCollapsed"> Devolucion </span>
+                    </span>
+                </a>
+            </mat-expansion-panel>
+            <!-- <a mat-list-item>
                 <span class="entry">
                     <mat-icon>house</mat-icon>
                     <span *ngIf="!isCollapsed"> Control Recepcion </span>
                 </span>
-            </a>
-            <a mat-list-item>
+            </a> -->
+            <!-- <a mat-list-item>
                 <span class="entry">
                     <mat-icon>subject</mat-icon>
                     <span *ngIf="!isCollapsed"> Recepcion </span>
                 </span>
-            </a>
-            <a mat-list-item>
+            </a> -->
+            <!-- <a mat-list-item>
                 <span class="entry">
                     <mat-icon>settings_backup_restore</mat-icon>
                     <span *ngIf="!isCollapsed"> Devolucion </span>
                 </span>
-            </a>
-            <a mat-list-item>
-                <span class="entry">
-                    <mat-icon>house</mat-icon>
-                    <span *ngIf="!isCollapsed"> Reportes </span>
-                </span>
-            </a>
-            <a mat-list-item>
-                <span class="entry">
-                    <mat-icon>subject</mat-icon>
-                    <span *ngIf="!isCollapsed"> Reportes Recepcion </span>
-                </span>
-            </a>
-            <a mat-list-item>
-                <span class="entry">
-                    <mat-icon>settings_backup_restore</mat-icon>
-                    <span *ngIf="!isCollapsed">Reportes Devolucion</span>
-                </span>
-            </a>
-            <a mat-list-item>
-                <span class="entry">
-                    <mat-icon>settings</mat-icon>
-                    <span *ngIf="!isCollapsed"> Configuracion </span>
-                </span>
-            </a>
+            </a> -->
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <!-- <a mat-list-item> -->
+                            <span class="entry">
+                                <mat-icon>house</mat-icon>
+                                <span *ngIf="!isCollapsed"> Reportes </span>
+                            </span>
+                        <!-- </a> -->
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <a mat-list-item>
+                    <span class="entry">
+                        <mat-icon>subject</mat-icon>
+                        <span *ngIf="!isCollapsed">Recepcion </span>
+                    </span>
+                </a>
+                <a mat-list-item>
+                    <span class="entry">
+                        <mat-icon>settings_backup_restore</mat-icon>
+                        <span *ngIf="!isCollapsed">Devolucion</span>
+                    </span>
+                </a>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <!-- <a mat-list-item> -->
+                            <span class="entry">
+                                <mat-icon>settings</mat-icon>
+                                <span *ngIf="!isCollapsed"> Configuracion </span>
+                            </span>
+                        <!-- </a> -->
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
             <a mat-list-item>
                 <span class="entry">
                     <mat-icon>business</mat-icon>
@@ -102,6 +145,7 @@
                     <span *ngIf="!isCollapsed"> Devolucion </span>
                 </span>
             </a>
+        </mat-expansion-panel>
         </mat-nav-list>
     </mat-sidenav>
 
