@@ -3,6 +3,7 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { ConfigComponent } from './components/pages/config/config.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { ContainerAppComponent } from './components/pages/container-app/container-app.component';
+import { CompanyComponent } from './components/pages/config/company/company.component';
 
 export const routes: Routes = [
     {
@@ -17,6 +18,10 @@ export const routes: Routes = [
                 path: 'config',
                 component: ConfigComponent
             },
+            {
+                path: 'company',
+                component: CompanyComponent
+            }
         ]
     },
     {

@@ -1,6 +1,6 @@
 import { Component,ViewChild } from '@angular/core';
 import { HomeComponent } from '../home/home.component';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet,RouterLink, RouterLinkActive } from '@angular/router';
 import { AppComponent } from '../../../app.component';
 import {BreakpointObserver} from '@angular/cdk/layout';
 import { CommonModule} from '@angular/common';
@@ -15,12 +15,16 @@ import {MatIconModule} from '@angular/material/icon'
 import {MatListModule} from '@angular/material/list'
 import {MatExpansionModule} from '@angular/material/expansion'
 import {MatDividerModule} from '@angular/material/divider';
+import {MatCardModule} from'@angular/material/card';
+import {MatProgressBarModule} from '@angular/material/progress-bar'
+
 import {FormBuilder, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { CompanyComponent } from '../config/company/company.component';
 
 @Component({
   selector: 'app-container-app',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent, AppComponent,
+  imports: [RouterOutlet, HomeComponent, AppComponent,CompanyComponent,
     MatToolbarModule,
     MatSidenavModule,
     FormsModule,
@@ -33,7 +37,11 @@ import {FormBuilder, FormsModule, ReactiveFormsModule} from '@angular/forms';
     MatListModule,
     MatExpansionModule,
     MatDividerModule,
-    CommonModule
+    MatCardModule,
+    MatProgressBarModule,
+    CommonModule,
+    RouterLink,
+    RouterLinkActive
     ],
   templateUrl: './container-app.component.html',
   styleUrl: './container-app.component.scss'

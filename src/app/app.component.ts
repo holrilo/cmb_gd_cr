@@ -12,11 +12,12 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatInputModule} from '@angular/material/input';
 import {FormBuilder, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { CompanyComponent } from './components/pages/config/company/company.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,LoginComponent, 
+  imports: [CommonModule, RouterOutlet,LoginComponent, CompanyComponent
     // MatToolbarModule,
     // MatSidenavModule,
     // FormsModule,
